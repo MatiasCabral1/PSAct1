@@ -1,0 +1,116 @@
+/* Estilos generales que aplican a todos los dispositivos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    flex-grow: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+.plant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.plant {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.info-button {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos específicos para dispositivos móviles (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .main-content {
+        padding: 10px;
+    }
+    
+    .plant {
+        width: 100%; /* Las plantas ocuparán todo el ancho de la pantalla */
+    }
+}
+
+/* Estilos específicos para tabletas (min-width: 768px) y (max-width: 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-content {
+        max-width: 600px;
+    }
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav ul > li {
+        padding: 10%;
+    }
+    #categoria-selector {
+        display: block;
+        margin: 0 auto;
+        background-color: #333;
+        color: white;
+        border-radius: 10%;
+    }
+}
+
+/* Estilos específicos para ordenadores (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    .main-content {
+        max-width: 800px;
+    }
+}

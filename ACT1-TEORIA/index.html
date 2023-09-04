@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio de Plantas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="contacto.html">Información de Contacto</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="plantas-exterior.html">Plantas Exteriores</a></li>
+                <li><a href="plantas-interior.html">Plantas Interiores</a></li>
+                    <li><a href="enunciado.html">Actividad 1</a></li>
+            </ul>
+        </nav>
+        <form>
+            <select id="categoria-selector" select onchange="location = this.value;">
+                <option value="">Selecciona una categoría</option>
+                    <option value="plantas-exterior.html">Exterior</option>
+                    <option value="plantas-interior.html">Interior</option>
+            </select>
+            </form>
+    </header>
+    
+    <section class="main-content">
+        <h1>Plantas</h1>
+        
+        <div class="plant-container" id="categoria-exterior">
+            <!-- Aquí se mostrarán las plantas exteriores -->
+            <div class="plant">
+                <img src="imagenes/planta_exterior_1.png" alt="Planta Exterior 1">
+                <a href="info/planta_exterior_1.pdf" class="info-button">Más info</a>
+            </div>
+            <div class="plant">
+                <img src="imagenes/planta_exterior_2.png" alt="Planta Exterior 2">
+                <a href="info/planta_exterior_2.pdf" class="info-button">Más info</a>
+            </div>
+            <div class="plant">
+                <img src="imagenes/planta_exterior_3.png" alt="Planta Exterior 3">
+                <a href="info/planta_exterior_3.pdf" class="info-button">Más info</a>
+            </div>
+        </div>
+        
+        <div class="plant-container" id="categoria-interior">
+            <!-- Aquí se mostrarán las plantas interiores -->
+            <div class="plant">
+                <img src="imagenes/planta_interior_1.png" alt="Planta Interior 1">
+                <a href="info/planta_interior_1.pdf" class="info-button">Más info</a>
+            </div>
+            <div class="plant">
+                <img src="imagenes/planta_interior_2.png" alt="Planta Interior 2">
+                <a href="info/planta_interior_2.pdf" class="info-button">Más info</a>
+            </div>
+            <div class="plant">
+                <img src="imagenes/planta_interior_3.png" alt="Planta Interior 3">
+                <a href="info/planta_interior_3.pdf" class="info-button">Más info</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <!-- Agrega el pie de página según sea necesario -->
+    </footer>
+</body>
+</html>
